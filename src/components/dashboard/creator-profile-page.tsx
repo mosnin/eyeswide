@@ -11,7 +11,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Switch } from "@/components/ui/switch";
 import { Topbar } from "@/components/layout/topbar";
-import { Loader2, Save, ExternalLink, MapPin, Plus, X } from "lucide-react";
+import { Loader2, Save, ExternalLink, X } from "lucide-react";
 import type { SocialPlatform } from "@/types/database";
 
 const NICHES = [

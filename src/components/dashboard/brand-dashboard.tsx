@@ -49,7 +49,6 @@ export function BrandDashboard({
   const subs = brandProfile?.subscriptions as unknown as Record<string, unknown>[] | null;
   const subscription = subs?.[0] ?? null;
   const isTrialing = subscription?.status === "trialing";
-  const isActive = subscription?.status === "active" || isTrialing;
 
   const pendingCount = recentCampaigns.filter(
     (c) => c.status === "pending"

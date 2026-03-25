@@ -95,9 +95,9 @@ export function Sidebar({ accountType, userName }: SidebarProps) {
         : Shield;
 
   return (
-    <aside className="flex h-full w-64 flex-col border-r bg-card">
-      {/* Logo */}
-      <div className="flex h-16 items-center border-b px-6">
+    <aside className="flex h-full w-60 flex-col border-r bg-muted">
+      {/* Logo - modaf topbar-height: 56px (h-14) */}
+      <div className="flex h-14 items-center border-b px-5">
         <Link href="/dashboard" className="flex items-center gap-2">
           <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
             <span className="text-sm font-bold text-primary-foreground">EW</span>
@@ -107,8 +107,8 @@ export function Sidebar({ accountType, userName }: SidebarProps) {
       </div>
 
       {/* Account badge */}
-      <div className="border-b px-4 py-3">
-        <div className="flex items-center gap-2 rounded-md bg-muted/50 px-3 py-2">
+      <div className="border-b px-3 py-3">
+        <div className="flex items-center gap-2 rounded-lg bg-background px-3 py-2">
           <AccountIcon className="h-4 w-4 text-primary" />
           <div className="min-w-0 flex-1">
             <p className="truncate text-sm font-medium">{userName}</p>
@@ -118,7 +118,7 @@ export function Sidebar({ accountType, userName }: SidebarProps) {
       </div>
 
       {/* Navigation */}
-      <nav className="flex-1 space-y-1 p-4">
+      <nav className="flex-1 space-y-0.5 px-3 py-4">
         {navItems.map((item) => {
           const isActive =
             pathname === item.href ||
@@ -131,10 +131,10 @@ export function Sidebar({ accountType, userName }: SidebarProps) {
               key={item.href}
               href={item.href}
               className={cn(
-                "flex items-center gap-3 rounded-md px-3 py-2 text-sm font-medium transition-colors",
+                "flex items-center gap-3 rounded-lg px-3 py-2 text-sm font-medium transition-fast",
                 isActive
-                  ? "bg-primary/10 text-primary"
-                  : "text-muted-foreground hover:bg-muted hover:text-foreground"
+                  ? "bg-background text-primary shadow-sm"
+                  : "text-muted-foreground hover:bg-background hover:text-foreground"
               )}
             >
               <item.icon className="h-4 w-4" />

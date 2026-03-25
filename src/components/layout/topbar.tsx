@@ -14,19 +14,19 @@ interface TopbarProps {
 
 export function Topbar({ accountType, userName, title }: TopbarProps) {
   return (
-    <header className="flex h-16 items-center border-b bg-card px-4 lg:px-6">
+    <header className="flex h-14 items-center border-b bg-background px-4 lg:px-6">
       {/* Mobile menu */}
       <Sheet>
         <SheetTrigger render={<Button variant="ghost" size="icon" className="lg:hidden" />}>
             <Menu className="h-5 w-5" />
         </SheetTrigger>
-        <SheetContent side="left" className="w-64 p-0">
+        <SheetContent side="left" className="w-60 p-0">
           <Sidebar accountType={accountType} userName={userName} />
         </SheetContent>
       </Sheet>
 
       {title && (
-        <h1 className="text-lg font-semibold lg:text-xl">{title}</h1>
+        <h1 className="text-xl font-semibold">{title}</h1>
       )}
     </header>
   );

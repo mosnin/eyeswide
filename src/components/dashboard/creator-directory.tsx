@@ -20,7 +20,7 @@ interface CreatorDirectoryProps {
   brandId: string;
 }
 
-export function CreatorDirectory({ creators, brandId }: CreatorDirectoryProps) {
+export function CreatorDirectory({ creators, brandId: _brandId }: CreatorDirectoryProps) {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedNiche, setSelectedNiche] = useState<string | null>(null);
 

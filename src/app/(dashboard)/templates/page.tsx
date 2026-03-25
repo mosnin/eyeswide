@@ -7,7 +7,6 @@ import {
   CardContent,
   CardHeader,
   CardTitle,
-  CardDescription,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -46,7 +45,15 @@ export default function TemplatesPage() {
   const supabase = createClient();
 
   useEffect(() => {
-    loadTemplates();
+    const client = createClient();
+    client
+      .from("outreach_templates")
+      .select("*")
+      .order("created_at", { ascending: false })
+      .then(({ data }) => {
+        setTemplates((data as Template[]) || []);
+        setLoading(false);
+      });
   }, []);
 
   async function loadTemplates() {

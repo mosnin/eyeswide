@@ -1,13 +1,13 @@
 "use client";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback } from "@/components/ui/avatar";
 import { Topbar } from "@/components/layout/topbar";
 import Link from "next/link";
 import type { AccountType } from "@/types/database";
-import { Heart, Send, ExternalLink, Building2, Sparkles } from "lucide-react";
+import { Heart, Send, ExternalLink, Building2 } from "lucide-react";
 
 interface FavoritesPageProps {
   accountType: string;
@@ -21,8 +21,6 @@ export function FavoritesPage({
   favoriteBrands,
 }: FavoritesPageProps) {
   const items = accountType === "brand" ? favoriteCreators : favoriteBrands;
-  const emptyIcon = accountType === "brand" ? Sparkles : Building2;
-  const EmptyIcon = emptyIcon;
 
   return (
     <div>
