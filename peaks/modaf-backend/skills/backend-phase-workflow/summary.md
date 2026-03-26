@@ -1,0 +1,1 @@
+The backend-phase-workflow skill orchestrates a 12-phase build process for backend systems, from requirements gathering through production hardening. Each phase has defined prerequisites, deliverables, and validation gates. The skill detects the current phase automatically, loads the relevant knowledge pack files, and guides implementation through completion.
