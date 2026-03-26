@@ -1,0 +1,50 @@
+work_type: backend-build
+description: "Building a backend phase (database, API, services, deployment, etc.)"
+
+required:
+  - path: conventions.md
+    reason: Core coding standards and project conventions
+
+  - path: knowledge/backend-internal/source/phases/{{current_phase}}.md
+    reason: The active phase file driving current build work
+
+  - path: knowledge/backend-internal/source/internal/service_architecture.md
+    reason: Service layer patterns and module structure
+
+  - path: knowledge/backend-internal/source/internal/database_patterns.md
+    reason: Database modeling and query conventions
+
+recommended:
+  - path: knowledge/backend-internal/source/internal/error_handling.md
+    reason: Error handling patterns for robust implementations
+
+  - path: knowledge/backend-internal/source/internal/logging_monitoring.md
+    reason: Observability standards for new code
+
+  - path: knowledge/backend-internal/source/internal/testing_strategy.md
+    reason: Testing expectations for build phases
+
+  - path: templates/service-architecture.md
+    reason: Template for structuring new services
+
+  - path: templates/database-schema.md
+    reason: Template for schema and migration files
+
+  - path: templates/api-design.md
+    reason: Template for endpoint design
+
+optional:
+  - path: knowledge/backend-internal/source/internal/auth_authorization.md
+    reason: Auth patterns when building protected features
+
+  - path: knowledge/backend-internal/source/internal/caching_strategy.md
+    reason: Caching guidance when performance is relevant
+
+  - path: knowledge/backend-internal/source/internal/deployment.md
+    reason: Deployment config when working on infra phases
+
+  - path: templates/deployment.md
+    reason: CI/CD and Docker templates for deployment phases
+
+  - path: templates/testing-strategy.md
+    reason: Testing plan template for test-heavy phases

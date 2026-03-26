@@ -1,0 +1,15 @@
+name: backend-phase-workflow
+type: skill
+version: "1.0.0"
+description: "Orchestrates the 12-phase backend build process from requirements through hardening"
+triggers:
+  - "/backend-phase"
+  - "backend build"
+  - "implement backend"
+  - "build the backend"
+dependencies:
+  - backend-internal
+provides:
+  - phased backend build orchestration
+  - phase detection and resumption
+  - validation gate enforcement

@@ -1,0 +1,44 @@
+name: backend-internal
+type: knowledge
+description: "Comprehensive backend engineering reference — API design, database patterns, auth, services, testing, deployment"
+
+files:
+  # Manifest and quick start
+  - source/MANIFEST.md
+  - source/QUICK_START.md
+
+  # Phase files (12-phase backend build lifecycle)
+  - source/phases/phase_00.md
+  - source/phases/phase_01.md
+  - source/phases/phase_02.md
+  - source/phases/phase_03.md
+  - source/phases/phase_04.md
+  - source/phases/phase_05.md
+  - source/phases/phase_06.md
+  - source/phases/phase_07.md
+  - source/phases/phase_08.md
+  - source/phases/phase_09.md
+  - source/phases/phase_10.md
+  - source/phases/phase_11.md
+
+  # Internal reference documents (01-20)
+  - source/internal/api_design.md
+  - source/internal/api_versioning.md
+  - source/internal/auth_authorization.md
+  - source/internal/caching_strategy.md
+  - source/internal/database_patterns.md
+  - source/internal/deployment.md
+  - source/internal/error_handling.md
+  - source/internal/file_storage.md
+  - source/internal/logging_monitoring.md
+  - source/internal/migrations.md
+  - source/internal/monitoring.md
+  - source/internal/performance_optimization.md
+  - source/internal/queues.md
+  - source/internal/rate_limiting.md
+  - source/internal/security_hardening.md
+  - source/internal/service_architecture.md
+  - source/internal/testing_strategy.md
+  - source/internal/webhooks.md
+  - source/internal/environment_config.md
+  - source/internal/data_serialization.md

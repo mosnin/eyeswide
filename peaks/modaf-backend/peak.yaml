@@ -1,0 +1,83 @@
+name: modaf-backend
+domain: backend
+version: "1.0.0"
+description: >
+  A comprehensive backend engineering peak for Melted Peak. Guides projects
+  through 12 build phases — from requirements gathering through production
+  hardening — with opinionated defaults, escape hatches, and battle-tested
+  conventions for building robust server-side systems.
+
+boot_files:
+  - peaks/modaf-backend/conventions.md
+
+skills:
+  - name: backend-phase-workflow
+    description: >
+      Orchestrates the 12-phase backend build lifecycle. Detects the current
+      project phase, enforces phase prerequisites, and guides the developer
+      through each step with contextual instructions and quality gates.
+    entry: skills/backend-phase-workflow/skill.md
+
+  - name: backend-doctor
+    description: >
+      Diagnoses project health by scanning configuration, dependencies,
+      security posture, test coverage, and infrastructure readiness. Produces
+      an actionable report with severity-ranked findings.
+    entry: skills/backend-doctor/skill.md
+
+knowledge_packs:
+  - name: backend-internal
+    description: >
+      20 internal reference documents covering API design patterns, database
+      modeling, auth strategies, service architecture, caching, queues,
+      file storage, webhooks, rate limiting, logging, monitoring, testing
+      strategies, security hardening, deployment, migrations, performance
+      optimization, and API versioning.
+    path: knowledge/backend-internal
+
+templates:
+  - name: api-design
+    description: OpenAPI specification and endpoint design template
+    path: templates/api-design.md
+
+  - name: database-schema
+    description: Database schema, migrations, and data modeling template
+    path: templates/database-schema.md
+
+  - name: service-architecture
+    description: Service layer, dependency injection, and module structure template
+    path: templates/service-architecture.md
+
+  - name: auth-security
+    description: Authentication, authorization, and security configuration template
+    path: templates/auth-security.md
+
+  - name: deployment
+    description: Docker, CI/CD, and infrastructure-as-code template
+    path: templates/deployment.md
+
+  - name: testing-strategy
+    description: Unit, integration, and E2E testing plan template
+    path: templates/testing-strategy.md
+
+profiles:
+  - name: solo-backend
+    description: >
+      Optimized for a single developer building a backend from scratch.
+      Streamlines phases and reduces ceremony.
+
+  - name: team-backend
+    description: >
+      Designed for teams of 2-8 developers. Adds code review gates,
+      PR conventions, and shared ownership guidelines.
+
+  - name: microservices
+    description: >
+      Extends the base workflow for multi-service architectures. Adds
+      service boundaries, inter-service communication, and distributed
+      tracing guidance.
+
+  - name: api-only
+    description: >
+      Stripped-down profile for headless API projects with no frontend.
+      Focuses on API documentation, versioning, and consumer contracts.
