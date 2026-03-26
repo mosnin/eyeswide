@@ -1,0 +1,38 @@
+work_type: backend-api-design
+description: "Designing and implementing API endpoints"
+
+required:
+  - path: conventions.md
+    reason: Core conventions including naming and style rules
+
+  - path: knowledge/backend-internal/source/internal/api_design_system.md
+    reason: Endpoint patterns, resource modeling, and response formats
+
+  - path: knowledge/backend-internal/source/internal/validation_schemas.md
+    reason: Request validation, schema definitions, and input sanitization
+
+  - path: knowledge/backend-internal/source/internal/error_handling.md
+    reason: API error responses, status codes, and error envelopes
+
+  - path: knowledge/backend-internal/source/internal/auth_authorization.md
+    reason: Auth middleware, scopes, and permission checks for endpoints
+
+  - path: knowledge/backend-internal/source/internal/rate_limiting.md
+    reason: Rate limit headers, throttling tiers, and abuse prevention
+
+recommended:
+  - path: knowledge/backend-internal/source/internal/webhooks_events.md
+    reason: Webhook delivery, event payloads, and callback patterns
+
+  - path: knowledge/backend-internal/source/internal/api_versioning.md
+    reason: Versioning strategy, deprecation policy, and migration paths
+
+optional:
+  - path: knowledge/backend-internal/source/internal/caching_strategy.md
+    reason: Cache headers and CDN integration for API responses
+
+  - path: knowledge/backend-internal/source/internal/testing_strategy.md
+    reason: API contract testing and integration test patterns
+
+  - path: templates/api-design.md
+    reason: OpenAPI spec template for new endpoints

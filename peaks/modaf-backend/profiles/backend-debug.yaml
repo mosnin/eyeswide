@@ -1,0 +1,38 @@
+work_type: backend-debug
+description: "Debugging backend issues — errors, performance, data problems"
+
+required:
+  - path: conventions.md
+    reason: Core conventions to identify deviations causing bugs
+
+  - path: knowledge/backend-internal/source/internal/error_handling.md
+    reason: Error patterns, exception hierarchy, and recovery strategies
+
+  - path: knowledge/backend-internal/source/internal/logging_monitoring.md
+    reason: Log formats, tracing, and observability for diagnosing issues
+
+  - path: knowledge/backend-internal/source/internal/testing_strategy.md
+    reason: Testing patterns to reproduce and verify fixes
+
+recommended:
+  - path: knowledge/backend-internal/source/internal/service_architecture.md
+    reason: Service boundaries and dependency flow for tracing bugs
+
+  - path: knowledge/backend-internal/source/internal/database_patterns.md
+    reason: Query patterns, connection handling, and data integrity checks
+
+  - path: knowledge/backend-internal/source/internal/performance_optimization.md
+    reason: Performance baselines and profiling guidance
+
+  - path: knowledge/backend-internal/source/internal/security_hardening.md
+    reason: Security patterns when debugging auth or access issues
+
+optional:
+  - path: knowledge/backend-internal/source/internal/caching_strategy.md
+    reason: Cache invalidation and stale data debugging
+
+  - path: knowledge/backend-internal/source/internal/queues.md
+    reason: Queue and async job debugging patterns
+
+  - path: knowledge/backend-internal/source/internal/migrations.md
+    reason: Migration issues and data consistency problems

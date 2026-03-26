@@ -1,0 +1,8 @@
+name: backend-doctor
+type: skill
+triggers:
+  - /backend-doctor
+  - backend health
+  - check backend
+dependencies:
+  - backend-internal knowledge pack

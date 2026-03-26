@@ -1,0 +1,41 @@
+work_type: backend-architecture
+description: "Backend architecture planning — services, database, API structure, build order"
+
+required:
+  - path: conventions.md
+    reason: Core conventions that constrain architectural decisions
+
+  - path: knowledge/backend-internal/source/phases/phase_01_architecture.md
+    reason: Architecture phase checklist and deliverables
+
+  - path: knowledge/backend-internal/source/internal/service_architecture.md
+    reason: Service layer design, module boundaries, and dependency injection
+
+  - path: knowledge/backend-internal/source/internal/database_patterns.md
+    reason: Data modeling, schema design, and relationship patterns
+
+  - path: knowledge/backend-internal/source/internal/api_design_system.md
+    reason: API structure, resource modeling, and endpoint conventions
+
+recommended:
+  - path: knowledge/backend-internal/source/internal/auth_authorization.md
+    reason: Auth architecture affects service boundaries and data access
+
+  - path: knowledge/backend-internal/source/internal/caching_strategy.md
+    reason: Caching topology shapes architecture decisions
+
+  - path: knowledge/backend-internal/source/internal/escape_hatches.md
+    reason: When and how to deviate from opinionated defaults
+
+optional:
+  - path: knowledge/backend-internal/source/phases/phase_02_project_setup.md
+    reason: Project scaffolding follows immediately after architecture
+
+  - path: knowledge/backend-internal/source/internal/deployment.md
+    reason: Infrastructure constraints that influence architecture
+
+  - path: knowledge/backend-internal/source/internal/queues.md
+    reason: Async processing architecture for event-driven systems
+
+  - path: templates/service-architecture.md
+    reason: Template for documenting architecture decisions
